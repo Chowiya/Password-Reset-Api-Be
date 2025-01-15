@@ -111,7 +111,7 @@ const authController = {
             from: process.env.USER_EMAIL,
             to: email,
             subject: 'Password Reset request',
-            text: `https://myapp-fe.netlify.app/auth/new-password/${token}`
+            text: `https://myapp-fe.netlify.app/new-password/${token}`
           };
           
           transporter.sendMail(mailOptions, function(error, info){
